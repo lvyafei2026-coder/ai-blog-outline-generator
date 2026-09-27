@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Blog Post Outline Generator — Structured Outlines in Seconds</title>
+<meta name="description" content="Free AI blog post outline generator. Enter a topic and target keywords, get a structured H2/H3 outline with bullet points and a meta description. Powered by Cloudflare Workers AI.">
+<meta name="keywords" content="ai blog outline generator, blog post outline, content outline generator, seo blog outline, article outline tool">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#c2410c">
+
+<link rel="canonical" href="https://toolara.dev/ai-blog-outline-generator/">
+<link rel="alternate" hreflang="en" href="https://toolara.dev/ai-blog-outline-generator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://toolara.dev/ai-blog-outline-generator/zh/">
+<link rel="alternate" hreflang="x-default" href="https://toolara.dev/ai-blog-outline-generator/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Blog Post Outline Generator">
+<meta property="og:description" content="Generate structured blog outlines with SEO meta descriptions in seconds.">
+<meta property="og:url" content="https://toolara.dev/ai-blog-outline-generator/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "AI Blog Post Outline Generator",
+  "url": "https://toolara.dev/ai-blog-outline-generator/",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "description": "Free AI tool that generates structured blog post outlines with SEO meta descriptions.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="lang-switch">
+    <select id="langSelect" onchange="setLang(this.value)" aria-label="Language">
+      <option value="en">English</option>
+      <option value="zh">简体中文</option>
+    </select>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">✍️ AI-powered</div>
+    <h1 data-i18n="title">AI Blog Post Outline Generator</h1>
+    <p data-i18n="subtitle">Enter a topic, get a structured outline with H2/H3 sections and a meta description in seconds.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2 class="visually-hidden" data-i18n="calcHeading">Blog outline generator</h2>
+
+    <label for="topic" data-i18n="topicLabel">Topic</label>
+    <input type="text" id="topic" placeholder="How to start a podcast for beginners">
+
+    <div class="row">
+      <div>
+        <label for="keywords" data-i18n="keywordsLabel">Target keywords (optional)</label>
+        <input type="text" id="keywords" placeholder="podcast for beginners, start a podcast">
+      </div>
+      <div>
+        <label for="audience" data-i18n="audienceLabel">Target audience (optional)</label>
+        <input type="text" id="audience" placeholder="Aspiring podcasters with no experience">
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="depth" data-i18n="depthLabel">Outline depth</label>
+        <select id="depth">
+          <option value="brief" data-i18n="depthBrief">Brief — 3-4 sections</option>
+          <option value="standard" selected data-i18n="depthStandard">Standard — 5-6 sections</option>
+          <option value="detailed" data-i18n="depthDetailed">Detailed — 7-9 sections</option>
+        </select>
+      </div>
+      <div>
+        <label for="tone" data-i18n="toneLabel">Writing tone</label>
+        <select id="tone">
+          <option value="professional" selected data-i18n="toneProfessional">Professional</option>
+          <option value="conversational" data-i18n="toneConversational">Conversational</option>
+          <option value="technical" data-i18n="toneTechnical">Technical</option>
+          <option value="beginner" data-i18n="toneBeginner">Beginner-friendly</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="calc" type="button" id="generateBtn" onclick="generate()" data-i18n="calcBtn">Generate outline</button>
+
+    <div id="loading" class="loading" style="display:none;">
+      <div class="spinner"></div>
+      <div data-i18n="loadingText">Building your outline...</div>
+    </div>
+
+    <div id="error" class="error" style="display:none;"></div>
+
+    <div id="result" role="region" aria-live="polite">
+      <div class="result-header">
+        <div class="result-label" data-i18n="resultLabel">Your outline</div>
+        <button class="copy-btn" type="button" onclick="copyResult()" data-i18n="copyBtn">Copy</button>
+        <span class="copy-copied" id="copyCopied" data-i18n="copyCopied">Copied!</span>
+      </div>
+      <div class="result-box" id="resultText"></div>
+      <div class="result-meta" id="resultMeta"></div>
+      <div class="result-disclaimer" data-i18n="resultDisclaimer">This is a starting point. Add your own perspective, examples, and data before publishing.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="whatIsTitle">What does this tool do?</h2>
+    <p data-i18n="whatIsText">The hardest part of writing a blog post is deciding what to write about and in what order. This tool reads your topic, the keywords you want to rank for, and your target audience, then produces a structured outline — H2 and H3 sections with bullet points under each one, plus a suggested meta description. Paste it into Google Docs, Notion, or your CMS and start writing.</p>
+  </section>
+
+  <section>
+    <h2 data-i18n="howToUseTitle">How to get the best outlines</h2>
+    <ul>
+      <li data-i18n="tip1"><strong>Be specific in the topic.</strong> "How to start a podcast for beginners" produces a better outline than "podcasts."</li>
+      <li data-i18n="tip2"><strong>Include 1-3 target keywords.</strong> The model will weave them into H2 and H3 titles where they fit naturally.</li>
+      <li data-i18n="tip3"><strong>Describe your audience.</strong> "Small business owners who've never blogged" produces different structure and tone than "experienced developers."</li>
+      <li data-i18n="tip4"><strong>Use Detailed for pillar content.</strong> Long-form guides benefit from 7-9 sections. Use Brief for weekly posts or short updates.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 data-i18n="faqTitle">Frequently asked questions</h2>
+    <h3 data-i18n="faq1q">Is this tool free?</h3>
+    <p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p>
+
+    <h3 data-i18n="faq2q">Will this write the whole article for me?</h3>
+    <p data-i18n="faq2a">No, and that's intentional. This tool produces an outline, not the article. Writing the actual content is where your unique perspective matters most. The outline gives you a structure to fill in.</p>
+
+    <h3 data-i18n="faq3q">Is the outline SEO-optimized?</h3>
+    <p data-i18n="faq3a">Partially. The tool weaves your target keywords into section titles where they fit naturally, and generates a meta description. But real SEO requires backlinks, topical depth, and content that satisfies search intent — the outline is just the starting point.</p>
+
+    <h3 data-i18n="faq4q">Can I use this for YouTube scripts?</h3>
+    <p data-i18n="faq4a">Yes. The structure works well for video scripts — each H2 becomes a major segment, each H3 a talking point. You may want to ignore the meta description section for video content.</p>
+
+    <h3 data-i18n="faq5q">Is my input stored?</h3>
+    <p data-i18n="faq5a">No. Your topic, keywords, and audience description are sent to the AI model for processing and discarded immediately after. Nothing is stored, logged, or used for training.</p>
+
+    <div class="disclaimer" data-i18n="disclaimer"><strong>Note:</strong> Always review and adapt the outline. AI doesn't know your audience or your unique angle — you do.</div>
+  </section>
+</main>
+
+<footer class="footer" data-i18n="footer">Runs on Cloudflare Workers AI. Your text is not stored.</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
