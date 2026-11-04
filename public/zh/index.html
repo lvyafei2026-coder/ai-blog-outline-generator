@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toolara Blog Outline — 从主题到可发布大纲（免费）</title>
+<meta name="description" content="免费的 AI 博客大纲生成器。输入主题与关键词，得到带 H2/H3、开篇钩子与结尾 CTA 的完整结构。">
+<meta name="keywords" content="AI 工具, 免费 AI 工具, Toolara Blog Outline">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#c2410c">
+
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/images/logo-192.png">
+<link rel="canonical" href="https://blogoutline.toolara.dev/zh/">
+<link rel="alternate" hreflang="en" href="https://blogoutline.toolara.dev/">
+<link rel="alternate" hreflang="zh-Hans" href="https://blogoutline.toolara.dev/zh/">
+<link rel="alternate" hreflang="x-default" href="https://blogoutline.toolara.dev/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Toolara Blog Outline — 从主题到可发布大纲（免费）">
+<meta property="og:description" content="免费的 AI 博客大纲生成器。输入主题与关键词，得到带 H2/H3、开篇钩子与结尾 CTA 的完整结构。">
+<meta property="og:url" content="https://blogoutline.toolara.dev/zh/">
+<meta property="og:image" content="https://blogoutline.toolara.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Blog Post Outline Generator">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blogoutline.toolara.dev/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Toolara Blog Outline",
+  "url": "https://blogoutline.toolara.dev/",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "description": "Free AI tool that generates structured blog post outlines with SEO meta descriptions.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<link rel="stylesheet" href="/css/style.css?v=20261105g">
+<style id="footer-groups-css">
+.site-footer-grid{grid-template-columns:minmax(0,0.85fr) minmax(0,2.65fr)!important;gap:40px!important}
+.site-footer-column:nth-child(2){grid-row:1/span 2!important}
+.site-footer-column:nth-child(3){grid-column:1!important;grid-row:2!important}
+.site-footer-explore{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 20px;align-content:start}
+.site-footer-group{min-width:0}
+.site-footer-group-title{margin:0 0 9px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.16);color:#f8fafc;font-size:0.7rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;opacity:.75}
+.site-footer-group .site-footer-links{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:7px;font-size:0.85rem;line-height:1.4}
+@media(max-width:960px){.site-footer-grid{grid-template-columns:1fr!important;gap:30px!important}
+.site-footer-column:nth-child(2){grid-row:auto!important}.site-footer-column:nth-child(3){grid-column:auto!important;grid-row:auto!important}
+.site-footer-explore{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<style id="fc-cloud-css">
+/* Footer tool columns - Linear style (design v3-A) */
+.site-footer-grid{grid-template-columns:1.05fr 1.35fr 1.35fr 0.55fr !important;gap:44px !important}
+/* 覆盖子站旧版 nth-child 网格定位残留 */
+.site-footer .site-footer-column:nth-child(2),.site-footer .site-footer-column:nth-child(3),.site-footer .site-footer-column:nth-child(4){grid-row:auto !important;grid-column:auto !important;display:block !important}
+.site-footer .fa-h4{font-size:0.8rem;font-weight:600;color:#eceef0;margin:0 0 16px;letter-spacing:-0.005em}
+.site-footer .fa-h4 .n{color:#565b63;font-weight:500;margin-left:6px;font-size:0.74rem}
+.site-footer ul.fa-list{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}
+.site-footer ul.fa-list.single{columns:1}
+.site-footer ul.fa-list li{margin-bottom:11px;break-inside:avoid}
+.site-footer ul.fa-list a{font-size:0.8rem;color:#83898f;text-decoration:none;transition:color 0.12s;white-space:nowrap}
+.site-footer ul.fa-list a:hover{color:#f0f2f4}
+.site-footer ul.fa-list a .fa-new{color:#46a758;font-size:0.6rem;font-weight:700;letter-spacing:0.06em;margin-left:6px}
+.site-footer .fa-contact{margin-top:18px}.site-footer .fa-contact-h{margin:42px 0 10px !important;color:#f8fafc;font-size:0.95rem;font-weight:650}
+@media(max-width:960px){.site-footer-grid{grid-template-columns:1fr 1fr !important;gap:32px !important}}
+@media(max-width:640px){.site-footer-grid{grid-template-columns:1fr !important;gap:26px !important}}
+</style><script type="application/ld+json" id="seo-rich">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "这个工具免费吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免费。运行在 Cloudflare Workers AI 上，每天有充裕的免费额度。正常使用不会触达限制。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "会直接写出整篇文章吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不会，这是刻意的。本工具产出的是大纲，不是文章。写正文时，你的独特视角最重要。大纲只是给你一个可以填充的框架。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "大纲有 SEO 优化吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "部分有。工具会在合适的地方把目标关键词融入章节标题，并生成元描述。但真正的 SEO 需要外链、主题深度和满足搜索意图的内容——大纲只是起点。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以用于 YouTube 脚本吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。这个结构很适合视频脚本——每个 H2 是一个主要段落，每个 H3 是一个论点。视频内容可以忽略元描述那一节。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "输入会被存储吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不会。主题、关键词和读者描述会发送给 AI 模型处理，处理完立即丢弃。不存储、不记录、不用于训练。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "会写出全文吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不会。它只给结构：标题、要点、开头钩子和结尾 CTA，正文由你或写手补。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "关键词怎么处理？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "放进读起来自然的标题里。不设关键词密度指标，那个做法早就不管用了。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "能改结构吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。大纲是纯文本，交出去之前随便调整顺序、增删小节。"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "name": "怎么用 — Toolara Blog Outline",
+   "totalTime": "PT1M",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "填入主题",
+     "text": "有个工作标题就够。「如何降低退款率」比「电商」能出更具体的结构。"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "加上目标关键词",
+     "text": "一个主词加两三个相关词。大纲会把它们放进标题里，而不是往正文里堆。"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "选择深度",
+     "text": "简短对应 900 字，标准对应 1,500 字，详细用于带小节的长文。"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="site-brand" href="/" aria-label="Toolara Blog Outline"><img class="site-brand-logo" src="/images/logo-96.png" alt="Toolara Blog Outline logo" width="30" height="30"><span class="site-brand-name" data-i18n="title">Toolara Blog Outline</span></a><nav class="site-nav" aria-label="Site navigation"><select id="langSelect" onchange="setLang(this.value)" aria-label="Language">
+      <option value="en">English</option>
+      <option value="zh">简体中文</option>
+    </select><div id="auth-area"></div></nav></div></header>
+
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-badge" data-i18n="heroBadge">免费 · SEO 结构就绪</div>
+      <h1 data-i18n="heroTitle">从一个主题到能直接写的大纲</h1>
+      <p data-i18n="subtitle">输入主题，几秒内生成带 H2/H3 结构和元描述的文章大纲。</p>
+      <ul class="hero-points">
+        <li data-i18n="heroPoint1">H2/H3 结构并安排关键词位置</li>
+        <li data-i18n="heroPoint2">自带开篇钩子与结尾 CTA</li>
+        <li data-i18n="heroPoint3">可直接贴进编辑器</li>
+      </ul>
+      <a class="hero-cta" href="#tool" data-i18n="heroCta">免费试用</a>
+    </div>
+    <div class="hero-preview">
+      <div class="hp-bar"><span class="hp-dots"><i></i><i></i><i></i></span><span data-i18n="heroPreviewLabel">示例</span></div>
+      <div class="hp-prompt"><span class="hp-label" data-i18n="heroInputLabel">输入</span><span data-i18n="heroInputText">主题：如何降低电商退款率</span></div>
+      <div class="hp-arrow"></div>
+      <div class="hp-body" data-i18n="heroPreviewBody">H1：你的退款率为什么在上升
+
+H2：三个隐藏原因
+  H3：客服响应太慢
+  H3：尺码表不清楚
+H2：30 天内怎么修
+H2：如何衡量效果
+CTA：下载自查清单</div>
+      <div class="hp-tags"><span data-i18n="heroPreviewTag1">SEO</span><span data-i18n="heroPreviewTag2">1,500 字</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card" id="tool">
+    <div class="studio"><div class="studio-input">
+    <h2 class="visually-hidden" data-i18n="calcHeading">博客大纲生成</h2>
+
+    <label for="topic" data-i18n="topicLabel">主题</label>
+    <input type="text" id="topic" placeholder="如何从零开始做一档播客" data-i18n-ph="ph1">
+
+    <div class="row">
+      <div>
+        <label for="keywords" data-i18n="keywordsLabel">目标关键词（可选）</label>
+        <input type="text" id="keywords" placeholder="播客入门、播客怎么做" data-i18n-ph="ph2">
+      </div>
+      <div>
+        <label for="audience" data-i18n="audienceLabel">目标读者（可选）</label>
+        <input type="text" id="audience" placeholder="没有任何经验的播客新人" data-i18n-ph="ph3">
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="depth" data-i18n="depthLabel">大纲深度</label>
+        <select id="depth">
+          <option value="brief" data-i18n="depthBrief">简略——3-4 个章节</option>
+          <option value="standard" selected data-i18n="depthStandard">标准——5-6 个章节</option>
+          <option value="detailed" data-i18n="depthDetailed">详细——7-9 个章节</option>
+        </select>
+      </div>
+      <div>
+        <label for="tone" data-i18n="toneLabel">写作语气</label>
+        <select id="tone">
+          <option value="professional" selected data-i18n="toneProfessional">专业</option>
+          <option value="conversational" data-i18n="toneConversational">口语化</option>
+          <option value="technical" data-i18n="toneTechnical">技术性</option>
+          <option value="beginner" data-i18n="toneBeginner">新手友好</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="calc" type="button" id="generateBtn" onclick="generate()" data-i18n="calcBtn">生成大纲</button>
+
+    <div id="loading" class="loading" style="display:none;">
+      <div class="spinner"></div>
+      <div data-i18n="loadingText">正在构建大纲…</div>
+    </div>
+
+    <div id="error" class="error" style="display:none;"></div>
+
+    </div><div class="studio-output"><div class="studio-empty"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 20V9"/></svg><div class="se-title" data-i18n="seTitle">结果会显示在这里</div><div class="se-hint" data-i18n="seHint">在左边填好内容，点生成按钮。</div></div><div id="result" role="region" aria-live="polite">
+      <div class="result-header">
+        <div class="result-label" data-i18n="resultLabel">你的大纲</div>
+        <button class="copy-btn" type="button" onclick="copyResult()" data-i18n="copyBtn">复制</button>
+        <span class="copy-copied" id="copyCopied" data-i18n="copyCopied">已复制！</span>
+      </div>
+      <div class="result-box" id="resultText"></div>
+      <div class="result-meta" id="resultMeta"></div>
+      <div class="result-disclaimer" data-i18n="resultDisclaimer">这是起点。发布前请补充你自己的观点、案例和数据。</div>
+    </div>
+  </div></div>
+  </section>
+
+<section>
+    <h2 data-i18n="howTitle">怎么用</h2>
+    <p data-i18n="howIntro">给出主题、拿到结构，可以直接交给写手。</p>
+    <ol class="how-list">
+      <li><h3 data-i18n="how1t">填入主题</h3><p data-i18n="how1d">有个工作标题就够。「如何降低退款率」比「电商」能出更具体的结构。</p></li>
+      <li><h3 data-i18n="how2t">加上目标关键词</h3><p data-i18n="how2d">一个主词加两三个相关词。大纲会把它们放进标题里，而不是往正文里堆。</p></li>
+      <li><h3 data-i18n="how3t">选择深度</h3><p data-i18n="how3d">简短对应 900 字，标准对应 1,500 字，详细用于带小节的长文。</p></li>
+    </ol>
+  </section>
+
+  <section class="example-section">
+  <h2 data-i18n="exampleTitle">示例</h2>
+  <div class="example-grid">
+    <div class="example-col example-in"><div class="example-tag" data-i18n="exTagIn">主题与读者</div><p data-i18n="exIn">主题：如何在阳台种菜<br>读者：公寓里零经验的新手<br>目标：实用，周末就能动手</p></div>
+    <div class="example-col example-out"><div class="example-tag" data-i18n="exTagOut">大纲（节选）</div><p data-i18n="exOut">1. 先看光照，别急着买种子（评估 6 小时日照）<br>2. 容器与土：真正重要的几件事<br>3. 五种植保险的首作物（生菜、萝卜……）<br>4. 小空间的浇水节奏<br>5. 新手最常犯、可以跳过的错</p></div>
+  </div>
+  <p class="example-note" data-i18n="exNote">以上为工具实际输出示例，略有删减。</p>
+</section>
+
+  <section>
+    <h2 data-i18n="whatIsTitle">这个工具做什么？</h2>
+    <p data-i18n="whatIsText">写博客最难的部分是决定写什么、按什么顺序写。本工具会读懂你的主题、想排名的关键词和目标读者，然后产出一份结构化大纲——H2 和 H3 章节，每节下面有要点，再加上建议的元描述。生成后粘贴到 Google Docs、Notion 或你的 CMS 里就可以开始写。</p>
+
+  <div class="what-grid">
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg><div class="wc-t" data-i18n="f1t">开箱即用的骨架</div><p class="wc-d" data-i18n="f1d">H2/H3 分节带要点，附赠建议 meta 描述。</p></div>
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg><div class="wc-t" data-i18n="f2t">标题融入关键词</div><p class="wc-d" data-i18n="f2d">目标关键词会自然织入各级标题。</p></div>
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg><div class="wc-t" data-i18n="f3t">简略或详细</div><p class="wc-d" data-i18n="f3d">周更短文 5 段，支柱长文 7-9 段，自己定。</p></div>  </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="howToUseTitle">如何获得最好的大纲</h2>
+    <div class="tip-grid">
+    <div class="tip-card" data-i18n="tip1">主题要具体。「如何从零开始做播客」比「播客」产出的大纲更好。</div>
+    <div class="tip-card" data-i18n="tip2">写 1-3 个目标关键词。模型会在合适的地方把它们自然融入 H2 和 H3 标题。</div>
+    <div class="tip-card" data-i18n="tip3">描述你的读者。「从没写过博客的小企业主」产出的结构和语气，和「资深开发者」完全不同。</div>
+    <div class="tip-card" data-i18n="tip4">支柱内容用「详细」。长文指南适合 7-9 个章节。周更或短文用「简略」。</div>
+  </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="whenTitle">大纲真正省事的地方</h2>
+    <div class="use-grid">
+      <div class="use-card"><h3 data-i18n="use1t">排内容日历</h3><p data-i18n="use1d">二十分钟出十个大纲，立刻知道哪些题有内容可写。</p></div>
+      <div class="use-card"><h3 data-i18n="use2t">给外部写手派稿</h3><p data-i18n="use2d">带标题和小节的大纲，能省掉大部分来回沟通。</p></div>
+      <div class="use-card"><h3 data-i18n="use3t">写不下去的时候</h3><p data-i18n="use3d">先把 H2 摆出来，动笔就从「创作」变成「填空」。</p></div>
+      <div class="use-card"><h3 data-i18n="use4t">一个想法多处用</h3><p data-i18n="use4d">同一份大纲可以扩成文章、newsletter 和短视频脚本。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="faqTitle">常见问题</h2>
+    <div class="faq-list">
+  <details class="faq-item"><summary data-i18n="faq1q">这个工具免费吗？</summary><div class="faq-a"><p data-i18n="faq1a">免费。运行在 Cloudflare Workers AI 上，每天有充裕的免费额度。正常使用不会触达限制。</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq2q">会直接写出整篇文章吗？</summary><div class="faq-a"><p data-i18n="faq2a">不会，这是刻意的。本工具产出的是大纲，不是文章。写正文时，你的独特视角最重要。大纲只是给你一个可以填充的框架。</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq3q">大纲有 SEO 优化吗？</summary><div class="faq-a"><p data-i18n="faq3a">部分有。工具会在合适的地方把目标关键词融入章节标题，并生成元描述。但真正的 SEO 需要外链、主题深度和满足搜索意图的内容——大纲只是起点。</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq4q">可以用于 YouTube 脚本吗？</summary><div class="faq-a"><p data-i18n="faq4a">可以。这个结构很适合视频脚本——每个 H2 是一个主要段落，每个 H3 是一个论点。视频内容可以忽略元描述那一节。</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq5q">输入会被存储吗？</summary><div class="faq-a"><p data-i18n="faq5a">不会。主题、关键词和读者描述会发送给 AI 模型处理，处理完立即丢弃。不存储、不记录、不用于训练。</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq6q">会写出全文吗？</summary><div class="faq-a"><p data-i18n="faq6a">不会。它只给结构：标题、要点、开头钩子和结尾 CTA，正文由你或写手补。</p></div></details>
+<details class="faq-item"><summary data-i18n="faq7q">关键词怎么处理？</summary><div class="faq-a"><p data-i18n="faq7a">放进读起来自然的标题里。不设关键词密度指标，那个做法早就不管用了。</p></div></details>
+<details class="faq-item"><summary data-i18n="faq8q">能改结构吗？</summary><div class="faq-a"><p data-i18n="faq8a">可以。大纲是纯文本，交出去之前随便调整顺序、增删小节。</p></div></details>
+  </div>
+
+    <div class="disclaimer" data-i18n="disclaimer"><strong>注意：</strong>请务必检查和调整大纲。AI 不了解你的读者和你的独特角度——你才了解。</div>
+  </section>
+<section>
+    <h2 data-i18n="relatedTitle">相关的免费工具</h2>
+    <p data-i18n="relatedIntro">下面这些工具跑在同一套架构上：不用注册、不排队、不限字数。按手头的活儿挑一个。</p>
+    <div class="related-grid">
+      <a class="related-card" href="https://humanize.toolara.dev/">
+        <img src="https://humanize.toolara.dev/images/logo-96.png" alt="Toolara Humanize" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Humanize</strong><span data-i18n="rel_humanize">把 AI 生成的段落改写成真人语气。</span></div>
+      </a>
+      <a class="related-card" href="https://summarize.toolara.dev/">
+        <img src="https://summarize.toolara.dev/images/logo-96.png" alt="Toolara Summarize" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Summarize</strong><span data-i18n="rel_summarize">把长文和报告几秒内压成要点。</span></div>
+      </a>
+      <a class="related-card" href="https://emailreply.toolara.dev/">
+        <img src="https://emailreply.toolara.dev/images/logo-96.png" alt="Toolara Email Reply" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Email Reply</strong><span data-i18n="rel_emailreply">用对的语气起草回信，不再对着空白框发呆。</span></div>
+      </a>
+      <a class="related-card" href="https://coverletter.toolara.dev/">
+        <img src="https://coverletter.toolara.dev/images/logo-96.png" alt="Toolara Cover Letter" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Cover Letter</strong><span data-i18n="rel_coverletter">写一封对准岗位的求职信，而不是套模板。</span></div>
+      </a>
+      <a class="related-card" href="https://productcopy.toolara.dev/">
+        <img src="https://productcopy.toolara.dev/images/logo-96.png" alt="Toolara Product Copy" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Product Copy</strong><span data-i18n="rel_productcopy">把参数表变成卖点优先的商品文案。</span></div>
+      </a>
+      <a class="related-card" href="https://captions.toolara.dev/">
+        <img src="https://captions.toolara.dev/images/logo-96.png" alt="Toolara Captions" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Captions</strong><span data-i18n="rel_captions">每个主题三个文案版本，按平台调优。</span></div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer site-footer">
+<div class="site-footer-inner">
+<div class="site-footer-grid"><section class="site-footer-column">
+<a class="site-footer-wordmark" href="https://toolara.dev/" aria-label="toolara.dev">toolara<span class="tld">.dev</span></a>
+<p class="site-footer-site-name" data-i18n="title">Toolara Blog Outline</p>
+<p class="site-footer-description" data-i18n="subtitle">输入主题，几秒内生成带 H2/H3 结构和元描述的文章大纲。</p>
+<h2 class="fa-contact-h">Contact</h2><p class="site-footer-contact fa-contact"><a href="mailto:hello@toolara.dev">hello@toolara.dev</a></p></section><section class="site-footer-column"><h4 class="fa-h4">Calculators <span class="n">15</span></h4><ul class="fa-list"><li><a href="https://gfr.toolara.dev/">GFR Calculator</a></li><li><a href="https://crcl.toolara.dev/">Cockcroft-Gault</a></li><li><a href="https://dc-pay.toolara.dev/">DC Paycheck</a></li><li><a href="https://salary.toolara.dev/">Salary to Hourly</a></li><li><a href="https://freelance.toolara.dev/">Freelance Rate</a></li><li><a href="https://subscriptions.toolara.dev/">Subscription Tracker</a></li><li><a href="https://etsy.toolara.dev/">Etsy Fees</a></li><li><a href="https://ebay.toolara.dev/">eBay Fees</a></li><li><a href="https://paypal.toolara.dev/">PayPal Fees</a></li><li><a href="https://roof.toolara.dev/">Roof Pitch</a></li><li><a href="https://deck.toolara.dev/">Deck Material</a></li><li><a href="https://yarn.toolara.dev/">Yarn Calculator</a></li><li><a href="https://calligraphy.toolara.dev/">Calligraphy Ink</a></li><li><a href="https://flytying.toolara.dev/">Fly Tying</a></li><li><a href="https://sourdough.toolara.dev/">Sourdough Hydration</a></li></ul></section><section class="site-footer-column"><h4 class="fa-h4">Generators <span class="n">13</span></h4><ul class="fa-list"><li><a href="https://humanize.toolara.dev/">AI Humanizer</a></li><li><a href="https://summarize.toolara.dev/">AI Summarizer</a></li><li><a href="https://emailreply.toolara.dev/">AI Email Reply</a></li><li><a href="https://coverletter.toolara.dev/">AI Cover Letter</a></li><li><a href="https://productcopy.toolara.dev/">AI Product Copy</a></li><li><a href="https://captions.toolara.dev/">AI Social Captions</a></li><li><a href="https://background.toolara.dev/">Background Remover</a></li><li><a href="https://creative.toolara.dev/">Creative Generator<span class="fa-new">NEW</span></a></li><li><a href="https://figurine.toolara.dev/">3D Figurine<span class="fa-new">NEW</span></a></li><li><a href="https://music.toolara.dev/">AI Music<span class="fa-new">NEW</span></a></li><li><a href="https://audio.toolara.dev/">AI Audio Tool<span class="fa-new">NEW</span></a></li><li><a href="https://invoices.toolara.dev/">Invoice Reminder</a></li><li><a href="https://podcast.toolara.dev/">Podcast Show Notes</a></li></ul></section><section class="site-footer-column"><h4 class="fa-h4">Other <span class="n">3</span></h4><ul class="fa-list single"><li><a href="https://blackfriday.toolara.dev/">Black Friday Countdown<span class="fa-new">NEW</span></a></li><li><a href="https://clocksgoback.toolara.dev/">Clocks Go Back</a></li><li><a href="https://devtools.toolara.dev/">Code Tools</a></li></ul></section></div>
+<div class="site-footer-bottom"><p class="site-footer-privacy" data-i18n="footer">运行在 Cloudflare Workers AI 上。你的文本不会被存储。</p></div>
+</div>
+</footer>
+
+<script src="/js/i18n.js"></script>
+<script src="/js/auth.js?v=20261104f" defer></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
