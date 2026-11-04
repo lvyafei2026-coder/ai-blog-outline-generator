@@ -44,5 +44,12 @@
   "errTopic": "Please enter a topic (at least 5 characters).",
   "errGeneric": "Something went wrong. Please try again.",
   "errNetwork": "Network error. Please try again.",
-  "errRateLimit": "Too many requests. Please wait a minute and try again."
+  "errRateLimit": "Too many requests. Please wait a minute and try again.",
+  "heroBadge": "✍️ Free · SEO-ready structure",
+  "f1t": "Publish-ready skeleton",
+  "f1d": "H2 and H3 sections with bullet points, plus a suggested meta description.",
+  "f2t": "Keyword-aware headings",
+  "f2d": "Your target keywords are woven into titles where they fit naturally.",
+  "f3t": "Brief or detailed",
+  "f3d": "Five sections for a weekly post, seven to nine for a pillar guide — your call."
 }

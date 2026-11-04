@@ -40,7 +40,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/css/style.css?v=20261104a">
+<link rel="stylesheet" href="/css/style.css?v=20261105a">
 <style id="footer-groups-css">
 .site-footer-grid{grid-template-columns:minmax(0,0.85fr) minmax(0,2.65fr)!important;gap:40px!important}
 .site-footer-column:nth-child(2){grid-row:1/span 2!important}
@@ -80,7 +80,7 @@
 <header class="hero">
 
   <div class="hero-inner">
-    <div class="hero-badge">✍️ AI-powered</div>
+    <div class="hero-badge" data-i18n="heroBadge">✍️ Free · SEO-ready structure</div>
     <h1 data-i18n="title">AI Blog Post Outline Generator</h1>
     <p data-i18n="subtitle">Enter a topic, get a structured outline with H2/H3 sections and a meta description in seconds.</p>
   </div>
@@ -159,34 +159,32 @@
   <section>
     <h2 data-i18n="whatIsTitle">What does this tool do?</h2>
     <p data-i18n="whatIsText">The hardest part of writing a blog post is deciding what to write about and in what order. This tool reads your topic, the keywords you want to rank for, and your target audience, then produces a structured outline — H2 and H3 sections with bullet points under each one, plus a suggested meta description. Paste it into Google Docs, Notion, or your CMS and start writing.</p>
+
+  <div class="what-grid">
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg><div class="wc-t" data-i18n="f1t">Publish-ready skeleton</div><p class="wc-d" data-i18n="f1d">H2 and H3 sections with bullet points, plus a suggested meta description.</p></div>
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg><div class="wc-t" data-i18n="f2t">Keyword-aware headings</div><p class="wc-d" data-i18n="f2d">Your target keywords are woven into titles where they fit naturally.</p></div>
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg><div class="wc-t" data-i18n="f3t">Brief or detailed</div><p class="wc-d" data-i18n="f3d">Five sections for a weekly post, seven to nine for a pillar guide — your call.</p></div>  </div>
   </section>
 
   <section>
     <h2 data-i18n="howToUseTitle">How to get the best outlines</h2>
-    <ul>
-      <li data-i18n="tip1"><strong>Be specific in the topic.</strong> "How to start a podcast for beginners" produces a better outline than "podcasts."</li>
-      <li data-i18n="tip2"><strong>Include 1-3 target keywords.</strong> The model will weave them into H2 and H3 titles where they fit naturally.</li>
-      <li data-i18n="tip3"><strong>Describe your audience.</strong> "Small business owners who've never blogged" produces different structure and tone than "experienced developers."</li>
-      <li data-i18n="tip4"><strong>Use Detailed for pillar content.</strong> Long-form guides benefit from 7-9 sections. Use Brief for weekly posts or short updates.</li>
-    </ul>
+    <div class="tip-grid">
+    <div class="tip-card" data-i18n="tip1">Be specific in the topic. "How to start a podcast for beginners" produces a better outline than "podcasts."</div>
+    <div class="tip-card" data-i18n="tip2">Include 1-3 target keywords. The model will weave them into H2 and H3 titles where they fit naturally.</div>
+    <div class="tip-card" data-i18n="tip3">Describe your audience. "Small business owners who've never blogged" produces different structure and tone than "experienced developers."</div>
+    <div class="tip-card" data-i18n="tip4">Use Detailed for pillar content. Long-form guides benefit from 7-9 sections. Use Brief for weekly posts or short updates.</div>
+  </div>
   </section>
 
   <section>
     <h2 data-i18n="faqTitle">Frequently asked questions</h2>
-    <h3 data-i18n="faq1q">Is this tool free?</h3>
-    <p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p>
-
-    <h3 data-i18n="faq2q">Will this write the whole article for me?</h3>
-    <p data-i18n="faq2a">No, and that's intentional. This tool produces an outline, not the article. Writing the actual content is where your unique perspective matters most. The outline gives you a structure to fill in.</p>
-
-    <h3 data-i18n="faq3q">Is the outline SEO-optimized?</h3>
-    <p data-i18n="faq3a">Partially. The tool weaves your target keywords into section titles where they fit naturally, and generates a meta description. But real SEO requires backlinks, topical depth, and content that satisfies search intent — the outline is just the starting point.</p>
-
-    <h3 data-i18n="faq4q">Can I use this for YouTube scripts?</h3>
-    <p data-i18n="faq4a">Yes. The structure works well for video scripts — each H2 becomes a major segment, each H3 a talking point. You may want to ignore the meta description section for video content.</p>
-
-    <h3 data-i18n="faq5q">Is my input stored?</h3>
-    <p data-i18n="faq5a">No. Your topic, keywords, and audience description are sent to the AI model for processing and discarded immediately after. Nothing is stored, logged, or used for training.</p>
+    <div class="faq-list">
+  <details class="faq-item"><summary data-i18n="faq1q">Is this tool free?</summary><div class="faq-a"><p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq2q">Will this write the whole article for me?</summary><div class="faq-a"><p data-i18n="faq2a">No, and that's intentional. This tool produces an outline, not the article. Writing the actual content is where your unique perspective matters most. The outline gives you a structure to fill in.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq3q">Is the outline SEO-optimized?</summary><div class="faq-a"><p data-i18n="faq3a">Partially. The tool weaves your target keywords into section titles where they fit naturally, and generates a meta description. But real SEO requires backlinks, topical depth, and content that satisfies search intent — the outline is just the starting point.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq4q">Can I use this for YouTube scripts?</summary><div class="faq-a"><p data-i18n="faq4a">Yes. The structure works well for video scripts — each H2 becomes a major segment, each H3 a talking point. You may want to ignore the meta description section for video content.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq5q">Is my input stored?</summary><div class="faq-a"><p data-i18n="faq5a">No. Your topic, keywords, and audience description are sent to the AI model for processing and discarded immediately after. Nothing is stored, logged, or used for training.</p></div></details>
+  </div>
 
     <div class="disclaimer" data-i18n="disclaimer"><strong>Note:</strong> Always review and adapt the outline. AI doesn't know your audience or your unique angle — you do.</div>
   </section>
