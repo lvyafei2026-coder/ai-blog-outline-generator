@@ -1,5 +1,16 @@
 {
   "title": "Toolara Blog Outline",
+  "heroTitle": "从一个主题到能直接写的大纲",
+  "heroCta": "免费试用",
+  "heroPoint1": "H2/H3 结构并安排关键词位置",
+  "heroPoint2": "自带开篇钩子与结尾 CTA",
+  "heroPoint3": "可直接贴进编辑器",
+  "heroPreviewLabel": "示例",
+  "heroInputLabel": "输入",
+  "heroInputText": "主题：如何降低电商退款率",
+  "heroPreviewBody": "H1：你的退款率为什么在上升\n\nH2：三个隐藏原因\n  H3：客服响应太慢\n  H3：尺码表不清楚\nH2：30 天内怎么修\nH2：如何衡量效果\nCTA：下载自查清单",
+  "heroPreviewTag1": "SEO",
+  "heroPreviewTag2": "1,500 字",
   "subtitle": "输入主题，几秒内生成带 H2/H3 结构和元描述的文章大纲。",
   "calcHeading": "博客大纲生成",
   "topicLabel": "主题",
@@ -45,11 +56,14 @@
   "errGeneric": "出错了，请重试。",
   "errNetwork": "网络错误，请重试。",
   "errRateLimit": "请求过于频繁，请稍等一分钟后再试。",
-  "heroBadge": "✍️ 免费 · SEO 友好结构",
+  "heroBadge": "免费 · SEO 结构就绪",
   "f1t": "开箱即用的骨架",
   "f1d": "H2/H3 分节带要点，附赠建议 meta 描述。",
   "f2t": "标题融入关键词",
   "f2d": "目标关键词会自然织入各级标题。",
   "f3t": "简略或详细",
-  "f3d": "周更短文 5 段，支柱长文 7-9 段，自己定。"
+  "f3d": "周更短文 5 段，支柱长文 7-9 段，自己定。",
+  "ph1": "如何从零开始做一档播客",
+  "ph2": "播客入门、播客怎么做",
+  "ph3": "没有任何经验的播客新人"
 }

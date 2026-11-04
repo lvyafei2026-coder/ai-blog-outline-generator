@@ -1,5 +1,16 @@
 {
   "title": "Toolara Blog Outline",
+  "heroTitle": "From topic to publish-ready outline",
+  "heroCta": "Try it now, free",
+  "heroPoint1": "H2/H3 structure with keyword placement",
+  "heroPoint2": "Intro hook and CTA included",
+  "heroPoint3": "Paste straight into your editor",
+  "heroPreviewLabel": "Example",
+  "heroInputLabel": "INPUT",
+  "heroInputText": "Topic: how to reduce e-commerce refund rate",
+  "heroPreviewBody": "H1: Why Your Refund Rate Is Climbing\n\nH2: The three hidden causes\n  H3: Slow support replies\n  H3: Unclear sizing charts\nH2: Fixing it in 30 days\nH2: Measuring the result\nCTA: Download the audit checklist",
+  "heroPreviewTag1": "SEO",
+  "heroPreviewTag2": "1,500 words",
   "subtitle": "Enter a topic, get a structured outline with H2/H3 sections and a meta description in seconds.",
   "calcHeading": "Blog outline generator",
   "topicLabel": "Topic",
@@ -45,11 +56,14 @@
   "errGeneric": "Something went wrong. Please try again.",
   "errNetwork": "Network error. Please try again.",
   "errRateLimit": "Too many requests. Please wait a minute and try again.",
-  "heroBadge": "✍️ Free · SEO-ready structure",
+  "heroBadge": "Free · SEO-ready structure",
   "f1t": "Publish-ready skeleton",
   "f1d": "H2 and H3 sections with bullet points, plus a suggested meta description.",
   "f2t": "Keyword-aware headings",
   "f2d": "Your target keywords are woven into titles where they fit naturally.",
   "f3t": "Brief or detailed",
-  "f3d": "Five sections for a weekly post, seven to nine for a pillar guide — your call."
+  "f3d": "Five sections for a weekly post, seven to nine for a pillar guide — your call.",
+  "ph1": "How to start a podcast for beginners",
+  "ph2": "podcast for beginners, start a podcast",
+  "ph3": "Aspiring podcasters with no experience"
 }

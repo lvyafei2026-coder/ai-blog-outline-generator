@@ -40,7 +40,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/css/style.css?v=20261105a">
+<link rel="stylesheet" href="/css/style.css?v=20261105e">
 <style id="footer-groups-css">
 .site-footer-grid{grid-template-columns:minmax(0,0.85fr) minmax(0,2.65fr)!important;gap:40px!important}
 .site-footer-column:nth-child(2){grid-row:1/span 2!important}
@@ -78,30 +78,51 @@
 
 
 <header class="hero">
-
   <div class="hero-inner">
-    <div class="hero-badge" data-i18n="heroBadge">✍️ Free · SEO-ready structure</div>
-    <h1 data-i18n="title">AI Blog Post Outline Generator</h1>
-    <p data-i18n="subtitle">Enter a topic, get a structured outline with H2/H3 sections and a meta description in seconds.</p>
+    <div class="hero-copy">
+      <div class="hero-badge" data-i18n="heroBadge">Free · SEO-ready structure</div>
+      <h1 data-i18n="heroTitle">From topic to publish-ready outline</h1>
+      <p data-i18n="subtitle">Enter a topic, get a structured outline with H2/H3 sections and a meta description in seconds.</p>
+      <ul class="hero-points">
+        <li data-i18n="heroPoint1">H2/H3 structure with keyword placement</li>
+        <li data-i18n="heroPoint2">Intro hook and CTA included</li>
+        <li data-i18n="heroPoint3">Paste straight into your editor</li>
+      </ul>
+      <a class="hero-cta" href="#tool" data-i18n="heroCta">Try it now</a>
+    </div>
+    <div class="hero-preview">
+      <div class="hp-bar"><span class="hp-dots"><i></i><i></i><i></i></span><span data-i18n="heroPreviewLabel">Example</span></div>
+      <div class="hp-prompt"><span class="hp-label" data-i18n="heroInputLabel">INPUT</span><span data-i18n="heroInputText">Topic: how to reduce e-commerce refund rate</span></div>
+      <div class="hp-arrow"></div>
+      <div class="hp-body" data-i18n="heroPreviewBody">H1: Why Your Refund Rate Is Climbing
+
+H2: The three hidden causes
+  H3: Slow support replies
+  H3: Unclear sizing charts
+H2: Fixing it in 30 days
+H2: Measuring the result
+CTA: Download the audit checklist</div>
+      <div class="hp-tags"><span data-i18n="heroPreviewTag1">SEO</span><span data-i18n="heroPreviewTag2">1,500 words</span></div>
+    </div>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="card">
+  <section class="card" id="tool">
     <div class="studio"><div class="studio-input">
     <h2 class="visually-hidden" data-i18n="calcHeading">Blog outline generator</h2>
 
     <label for="topic" data-i18n="topicLabel">Topic</label>
-    <input type="text" id="topic" placeholder="How to start a podcast for beginners">
+    <input type="text" id="topic" placeholder="How to start a podcast for beginners" data-i18n-ph="ph1">
 
     <div class="row">
       <div>
         <label for="keywords" data-i18n="keywordsLabel">Target keywords (optional)</label>
-        <input type="text" id="keywords" placeholder="podcast for beginners, start a podcast">
+        <input type="text" id="keywords" placeholder="podcast for beginners, start a podcast" data-i18n-ph="ph2">
       </div>
       <div>
         <label for="audience" data-i18n="audienceLabel">Target audience (optional)</label>
-        <input type="text" id="audience" placeholder="Aspiring podcasters with no experience">
+        <input type="text" id="audience" placeholder="Aspiring podcasters with no experience" data-i18n-ph="ph3">
       </div>
     </div>
 
