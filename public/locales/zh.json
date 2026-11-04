@@ -1,5 +1,5 @@
 {
-  "title": "AI 博客文章大纲生成器",
+  "title": "Toolara Blog Outline",
   "subtitle": "输入主题，几秒内生成带 H2/H3 结构和元描述的文章大纲。",
   "calcHeading": "博客大纲生成",
   "topicLabel": "主题",
